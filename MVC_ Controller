@@ -1,1 +1,12 @@
-Write-Host "Controller MVC"
+function testNode([string]$Id) {
+  try {
+    Invoke-RestMethod -Method Get -Uri "https://$Id/test"
+    $auditResult = $true
+  } catch {
+    $auditResult = $false
+  }
+  [AuditResult]@{
+    Healthy = $auditResult
+    Computer = $Id
+  }
+}
