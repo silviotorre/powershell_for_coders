@@ -1,0 +1,5 @@
+$filePath = 'C:\File.txt'
+while (-not (Test-Path -Path $filePath)) {
+    ## Wait a specific interval
+    Start-Sleep -Seconds 60
+}
