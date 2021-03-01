@@ -1,3 +1,14 @@
+<#########################################################
+#               Esempio di MVC pattern                   #
+#                   in Powershell                        #
+##########################################################
+#                                                        #
+#      MVC   : MODEL                                     #
+#      Review: Silvio                                    #
+#      Date  : march 2021                                #
+#                                                        #
+#########################################################>
+
 class Computer {
   [string] $Service
   [string] $ClusterId
